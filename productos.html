@@ -5,13 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="tabla.css">
 </head>
 <body>
-<header>
-		<a href="productos.html">Productos</a>
-		<a href="index.html">Home</a>
-		<a href="productos.html">link3</a>
-	</header>
+ <header>
+    <div class="logo">    
+      <a href="https://github.com/JCastellanosDev" target="_blank">
+        <img src="github.png">
+      </a>
+    </div>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="productos.html">Productos 1</a>
+          <ul class="submenu">
+            <li><a href="productos.html">Productos 2</a></li>
+            <li><a href="productos.html">Productos 3</a></li>
+          </ul>
+        </li>
+        <li><a href="productos.html">Productos 4</a></li>
+      </ul>
+    </nav>
+  </header>
+
 	<section>
 		<div class="contenedor">
 			<table>
@@ -50,10 +68,17 @@
 			</table>
 	</div>
 </section>
-		<footer>
-	<p>
-		Copyright 2026
-	</p>
-</footer>
+<footer>
+    <div class="copy">
+      <p>Copyright 2026</p>
+    </div>
+        <div class="logo">
+         <a href="https://github.com/JCastellanosDev" target="_blank">
+        <img src="github.png">
+        <a href="https://www.instagram.com/flamemetalchuy/" target="_blank">
+          <img src="insta.png">
+        </a>
+        </div>
+  </footer>
 </body>
 </html>

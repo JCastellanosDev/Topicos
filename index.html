@@ -1,42 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Principal</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Principal</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<a href="productos.html">Productos</a>
-		<a href="index.html">Home</a>
-		<a href="productos.html">link3</a>
-	</header>
-	<section>
-		
-		<div class="contenedor">
-			<div><img src="cerezo.webp"></div>
-			<div class="formulario">
-				<label>Introduce tu usuario:</label>
-				<input type="text" name="user">
-				<label>Introduce tu contraseña:</label>
-				<input type="password" name="pass">
-				<button class="boton">DALE SIN MIEDO PAPI</button>
-			</div>
-			<div>
-				<p>Los cerezos son los arboles mas esperados en japon y bla bla bla </p>
-				
-				<p class="segundo">#SOYOTAKU</p>
-			</div>
-		</div>
-			
 
-	</section>
+  <header>
+    <div class="logo">    
+      <a href="https://github.com/JCastellanosDev" target="_blank">
+        <img src="github.png">
+      </a>
+    </div>
 
-	<footer>
-	<p>
-		Copyright 2026
-	</p>
-</footer>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="productos.html">Productos 1</a>
+          <ul class="submenu">
+            <li><a href="productos.html">Productos 2</a></li>
+            <li><a href="productos.html">Productos 3</a></li>
+          </ul>
+        </li>
+        <li><a href="productos.html">Productos 4</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="Principal">
+
+    <div class="fila-sup">
+
+      <div class="contenedor-card">
+        <div class="card">
+          <h2 class="titulon">Sakura en Tokio</h2>
+          <img src="cere.webp">
+          <p>Parque Ueno </p>
+        </div>
+        <div class="card">
+          <h2 class="titulon">Isla Paradise</h2>
+          <img src="cere1.webp">
+          <p>Arbol de cerezo donde murio el titan fundador "Eren Yeager"</p>
+        </div>
+        <div class="card">
+          <h2 class="titulon">Sakura en Kioto</h2>
+          <img src="cere2.webp">
+          <p>Tetsugaku-no-Michi</p>
+        </div>
+        <div class="card">
+          <h2 class="titulon">Chopper</h2>
+          <img src="cerezo.webp">
+          <p>Arbol de cerezo que se baso en la lluvia de cerezos en el Reino de Drum</p>
+        </div>
+      </div>
+
+      <div class="contenedor-login">
+        <div><img src="die.png" alt="Como el Doki Doki"></div>
+        <div class="formulario">
+          <label>Introduce tu usuario:</label>
+          <input type="text" name="user">
+          <label>Introduce tu contraseña:</label>
+          <input type="password" name="pass">
+          <button class="boton">DALE SIN MIEDO PAPI</button>
+        </div>
+        <div>
+          <p>En Japón, la floración de los cerezos no es solo un evento de la naturaleza, es toda una festividad nacional conocida como Hanami (literalmente, "mirar flores"). Amigos, familias y compañeros de trabajo se reúnen a hacer picnics debajo de los árboles.
+
+Para la cultura japonesa, el Sakura representa lo efímera que es la vida (Mono no Aware): las flores alcanzan su máximo esplendor y caen en apenas dos semanas. Esta filosofía del florecer con fuerza y aceptar el destino es la razón por la que vemos tantas escenas nostálgicas de cerezos cayendo en los momentos más emotivos del anime.</p>
+          <p class="segundo">#SOYOTAKU</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="copy">
+      <p>&copy; Derechos reservados 2026</p>
+    </div>
+        <div class="logo">
+         <a href="https://github.com/JCastellanosDev" target="_blank">
+        <img src="github.png">
+        <a href="https://www.instagram.com/flamemetalchuy/" target="_blank">
+          <img src="insta.png">
+        </a>
+        </div>
+  </footer>
+
 </body>
 </html>

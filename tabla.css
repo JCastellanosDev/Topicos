@@ -1,0 +1,70 @@
+/* ── CONTENEDOR DE LA TABLA ── */
+.contenedor {
+  width: 100%;
+  text-align: center;
+  padding: 40px 20px; /* Le damos espacio arriba/abajo y a los lados */
+}
+
+/* ── TABLA ESTILIZADA Y CENTRADA ── */
+table {
+  display: table; /* Cambiado de inline-block a su valor nativo */
+  margin: 0 auto; /* ¡Este es el truco mágico que la centra! */
+  border-collapse: separate; /* Permite redondear las esquinas de la tabla */
+  border-spacing: 0;
+  border: solid #6d6478 3px;
+  border-radius: 12px; /* Esquinas redondeadas suaves */
+  overflow: hidden; /* Corta los bordes rectos de las filas internas */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+  max-width: 700px; /* Evita que se estire horrible en pantallas gigantes */
+  width: 100%; /* Se adapta si la pantalla es más chica que 700px */
+}
+
+/* Encabezados */
+.titin {
+  background: #6d6478;
+  color: #f7d4d9; /* Un rosa claro que combina con tu fondo */
+}
+
+th {
+  padding: 15px 20px; /* Más espacio interno para que respire */
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase; /* Hace que se vea más ordenado */
+  border-bottom: solid #6d6478 2px;
+}
+
+/* Filas de contenido */
+td {
+  padding: 12px 20px;
+  font-size: 16px;
+  vertical-align: middle;
+  border-bottom: solid rgba(109, 100, 120, 0.3) 1px; /* Líneas divisorias sutiles */
+}
+
+/* Quitar la última línea divisoria para que no choque con el borde */
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Alineaciones específicas para que se vea pro */
+td:nth-child(2) {
+  font-weight: bold; /* Resalta el precio */
+  color: #53567A; /* Un color diferente para los números */
+}
+
+/* Clases de colores que ya tenías */
+.oscuro {
+  background: #c89b85;
+  color: white;
+}
+
+.lp {
+  background: #6d6478;
+  color: white;
+}
+
+/* Un toque extra: efecto hover en las filas */
+table tr:hover:not(.titin) {
+  filter: brightness(1.1); /* Brilla un poquito cuando pasas el mouse */
+  transition: filter 0.2s;
+}
